@@ -1,4 +1,4 @@
-/* styles.css */
+
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -17,4 +17,31 @@
 /* This class will be added when hovering over squares */
 .colored {
     background-color: black; /* You can change this color */
+}
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    border: 1px solid black;
+}
+
+.grid-square {
+    width: calc(100% / var(--grid-size)); /* Dynamic width based on grid size */
+    aspect-ratio: 1;
+    box-sizing: border-box;
+    border: 1px solid black;
+    transition: background-color 0.1s;
+}
+
+.colored {
+    background-color: black;
+}
+
+#gridSize {
+    margin: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
 }
