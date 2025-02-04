@@ -1,3 +1,4 @@
+/* styles.css */
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -10,9 +11,10 @@
     aspect-ratio: 1;
     box-sizing: border-box;
     border: 1px solid black;
+    transition: background-color 0.1s; /* Optional: makes color change smooth */
 }
 
-/* Optional: Add hover effect */
-.grid-square:hover {
-    background-color: #ddd;
+/* This class will be added when hovering over squares */
+.colored {
+    background-color: black; /* You can change this color */
 }
